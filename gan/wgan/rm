@@ -1,0 +1,1 @@
+for some reasons, my wgan model trains badly, maybe the #data_image is too small.
