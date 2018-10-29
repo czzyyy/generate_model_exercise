@@ -22,3 +22,25 @@ The cartoon face dataset is kind of small, the results are bad.
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/info_gan/generate/celebA/10generate.png)
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/info_gan/generate/celebA/3generate.png)
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/info_gan/generate/celebA/39generate.png)
+## tempered_gan
+### cartoon
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/generate/cartoon_face/1generate.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/generate/cartoon_face/54generate.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/generate/cartoon_face/67generate.png)
+### lsun_outdoor_church
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/generate/lsun_outdoor_church/10generate.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/generate/lsun_outdoor_church/21generate.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/generate/lsun_outdoor_church/28generate.png)
+### celebA
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/generate/celebA/27generate.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/generate/celebA/59generate.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/generate/celebA/47generate.png)
+## be_gan
+### celebA
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/be_gan/generate/celebA/74generate.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/be_gan/generate/celebA/47generate.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/be_gan/generate/celebA/87generate.png)
+### celebA_crop
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/be_gan/generate/celebA_crop/10generate.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/be_gan/generate/celebA_crop/29generate.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/be_gan/generate/celebA_crop/51generate.png)
