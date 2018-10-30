@@ -22,6 +22,10 @@ The cartoon face dataset is kind of small, the results are bad.
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/info_gan/generate/celebA/10generate.png)
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/info_gan/generate/celebA/3generate.png)
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/info_gan/generate/celebA/39generate.png)
+### loss
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/info_gan/d_loss.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/info_gan/g_loss.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/info_gan/c_loss.png)
 ## tempered_gan
 ### cartoon
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/generate/cartoon_face/1generate.png)
@@ -35,6 +39,11 @@ The cartoon face dataset is kind of small, the results are bad.
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/generate/celebA/27generate.png)
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/generate/celebA/59generate.png)
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/generate/celebA/47generate.png)
+### loss
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/d_loss.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/g_loss.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/l_lamda.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/l_loss.png)
 ## be_gan
 ### celebA
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/be_gan/generate/celebA/74generate.png)
@@ -47,6 +56,6 @@ The cartoon face dataset is kind of small, the results are bad.
 ### loss
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/be_gan/d_loss.png)
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/be_gan/g_loss.png)
-![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/be_gan/kr.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/be_gan/kt.png)
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/be_gan/lr.png)
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/be_gan/m_global.png)
