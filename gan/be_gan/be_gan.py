@@ -8,7 +8,6 @@ import math
 import os
 import scipy.misc
 import out_image_data_load as image_load
-# 跑一个用原来脸 大size， 另一个用cut脸 大size
 learning_rate = 0.0002
 noise_size = 512
 input_size = [96, 96, 3]
@@ -18,6 +17,7 @@ display_step = 1024
 delay_step = 1024*10
 size = 32
 gamma = 0.4
+lamda_k = 0.001
 
 # faces data & lsun data
 
@@ -87,7 +87,6 @@ def full_connect(x, output_num, stddev=0.02, bias=0.0, name='full_connect', reus
 def conv2d(x, output_num, stride=2, filter_size=5, stddev=0.02, padding='SAME', name='conv2d', reuse=False):
     with tf.variable_scope(name, reuse=reuse):
         # filter : [height, width, in_channels, output_channels]
-        # 注意与解卷积的不同
         shape = x.shape.as_list()
         filter_shape = [filter_size, filter_size, shape[-1], output_num]
         strides_shape = [1, stride, stride, 1]
@@ -99,7 +98,6 @@ def conv2d(x, output_num, stride=2, filter_size=5, stddev=0.02, padding='SAME', 
 def deconv2d(x, output_size, stride=2, filter_size=5, stddev=0.02, padding='SAME', name='deconv2d', reuse=False):
     with tf.variable_scope(name, reuse=reuse):
         # filter : [height, width, output_channels, in_channels]
-        # 注意与卷积的不同
         shape = x.shape.as_list()
         filter_shape = [filter_size, filter_size, output_size[-1], shape[-1]]
         strides_shape = [1, stride, stride, 1]
@@ -171,12 +169,11 @@ s_h8, s_w8 = conv_out_size_same(s_h4, 2), conv_out_size_same(s_w4, 2)
 # generate (model 1)
 def build_generator(noise, train=True, reuse=False):
     with tf.variable_scope('generator', reuse=reuse):
-        # 对输入噪音图片进行线性变换 AttributeError: 'tuple' object has no attribute 'as_list
+        #AttributeError: 'tuple' object has no attribute 'as_list
         cur_size = int(1.75 * size)
         z = full_connect(noise, output_num=cur_size * s_h8 * s_w8, name='g_full', reuse=reuse)
-        # reshape成图像的格式
+        # reshape
         h0 = tf.reshape(z, [-1, s_h8, s_w8, cur_size])
-        # 对数据进行归一化处理 加快收敛速度
         h0 = tf.nn.elu(h0, name='g_l0')
         h1 = res_block_no_norm(h0, name='res_block0', reuse=reuse)
 
@@ -225,9 +222,8 @@ def build_discriminator(imgs, train=True, reuse=False):
         # decoder
         cur_size = int(1.75 * size)
         z = full_connect(hidden_x, output_num=cur_size * s_h8 * s_w8, name='de_full', reuse=reuse)
-        # reshape成图像的格式
+        # reshape
         h0 = tf.reshape(z, [-1, s_h8, s_w8, cur_size])
-        # 对数据进行归一化处理 加快收敛速度
         h0 = tf.nn.elu(h0, name='de_l0')
         h1 = res_block_no_norm(h0, name='de_res_block0', reuse=reuse)
 
@@ -335,7 +331,7 @@ def start_train(dataset, chunk_size):
                 sess.run(d_trainer, feed_dict={real_imgs: batch_data, noise_imgs: noise, kt: cur_kt, lr: cur_lr})
 
                 # update kt, m_global
-                cur_kt = np.maximum(np.minimum(1., cur_kt + cur_lr * (gamma * cur_d_real_loss - cur_d_fake_loss)), 0.)
+                cur_kt = np.maximum(np.minimum(1., cur_kt + lamda_k * (gamma * cur_d_real_loss - cur_d_fake_loss)), 0.)
 
                 if (chunk_size * e + batch_i) % delay_step == 0:
                     # update learning rate
