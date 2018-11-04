@@ -68,6 +68,10 @@ The cartoon face dataset is kind of small, the results are bad.
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/sn_gan/generate/celebA_crop/13generate.png)
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/sn_gan/generate/celebA_crop/17generate.png)
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/sn_gan/generate/celebA_crop/92generate.png)
+### lsun_outdoor_church
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/sn_gan/generate/lsun_outdoor_church/54generate.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/sn_gan/generate/lsun_outdoor_church/12generate.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/sn_gan/generate/lsun_outdoor_church/59generate.png)
 ### loss
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/sn_gan/d_loss.png)
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/sn_gan/g_loss.png)
