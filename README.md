@@ -63,3 +63,11 @@ The cartoon face dataset is kind of small, the results are bad.
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/be_gan/kt.png)
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/be_gan/lr.png)
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/be_gan/m_global.png)
+## sn_gan
+### celebA_crop
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/sn_gan/generate/celebA_crop/13generate.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/sn_gan/generate/celebA_crop/17generate.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/sn_gan/generate/celebA_crop/92generate.png)
+### loss
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/sn_gan/d_loss.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/sn_gan/g_loss.png)
