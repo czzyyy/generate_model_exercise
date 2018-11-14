@@ -39,6 +39,10 @@ The cartoon face dataset is kind of small, the results are bad.
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/generate/celebA/27generate.png)
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/generate/celebA/59generate.png)
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/generate/celebA/47generate.png)
+### celebA_crop_128
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/generate/celebA_crop/68generate.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/generate/celebA_crop/56generate.png)
+![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/generate/celebA_crop/17generate.png)
 ### loss
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/d_loss.png)
 ![image](https://github.com/czzyyy/generate_model_exercise/blob/master/gan/tempered_gan/g_loss.png)
